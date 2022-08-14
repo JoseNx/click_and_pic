@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="Es-es">
+
+    <head>
+        <meta charset="utf-8">
+        <!--link al css del index que se encuentra en la carpeta css-->
+        <link rel="stylesheet" type="text/css" href="../css/pagina_principal.css" />
+        <title>Página principal</title>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+
+        <!--La barra de navegacion principal, la cual esta hecha usando boostrap-->
+        <nav id="menuHorizontal">
+            <div id="interioNav">
+                <a id="botonDerecho" href="../php/zonaProductos.php">NUESTROS PRODUCTOS</a>
+
+                <a id="Logo" href="../html/pagina_principal.html">Click And Pic</a>
+
+                <a id="botonIzquierdo" href="../php/zonaFotos.php">VUESTRAS FOTOS</a>
+
+                <img id="usuarioPaginaPrincipal" src="../assets/cara_login.png">
+            </div>
+        </nav>
+
+        <div id="menuVertical">
+            <img id="cerrar_menu" src="../assets/x.png">
+            <img id="avatar" src="../assets/cara.svg">
+            <h1>Menú</h1>
+            <ul>
+                <li><a href="../php/login.php">Iniciar sesión</a></li>
+                <li><a href="../html/sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="../html/politicasPrivacidad.html">Politicas y privacidad</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <div id="frasePaginaPrincipal">
+            <p id="titulo">El mundo de alrededor es increíble</p>
+
+            <p id="subtitulo">No te quedes en casa y sal a verlo</p>
+
+            <a id="botonRegistro" href="../php/registro.php">REGISTRARSE</a>
+
+        </div>
+        <script src="../scripts/menuUsuario.js"></script>
+    </body>
+</html>

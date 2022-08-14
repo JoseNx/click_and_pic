@@ -1,0 +1,435 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-jun-2022, 15:31:05
+    Author     : digij
+*/
+
+/*Reseteo del css para que quede chulo*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Fondos y assets*/
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+body {
+    background-image: url(../assets/fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    margin: 0;
+}
+
+#menuHorizontal {
+    background-color: #CFCBCB;
+    background-size: 100%;
+    width: 100%;
+    height: 90px;
+}
+
+#interioNav {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+#botonDerecho {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    right: 200px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#Logo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Yeseva One';
+    font-weight: bold;
+    font-size: 50px;
+    top: 15px;
+}
+
+#botonIzquierdo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    left: 150px;
+    top: 10px;
+    font-size: 20px;
+}
+
+
+#frasePaginaPrincipal {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    top: 280px;
+}
+
+#titulo {
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Alegreya', serif;
+    font-size: 80px;
+    margin-bottom: 50px;
+
+}
+
+#subtitulo {
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Chathura', sans-serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+#botonRegistro{
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    background-color: #CFCBCB;
+    font-family: 'Chathura', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#usuarioPaginaPrincipal{
+    position: relative;
+    right:1250px;
+    top: 20px;
+
+}
+
+/*css del menu de usuario*/
+#menuVertical{
+    background-color: #CFCBCB;
+    position: absolute; left: 0px; top: 0px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+}
+
+#menuVertical h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerrar_menu{
+    float: right;
+    margin: 12px;
+    width: 32px;
+    height: 32px;
+}
+
+#avatar{
+    width: 130px;
+    display: block;
+    margin: 50px 60px;
+}
+
+#menuVertical ul li{
+    list-style: none;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+#menuVertical ul li:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+#menuVertical ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: 'Chathura', sans-serif;
+}
+
+/*contenido*/
+
+#tituloPrincipal{
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+#tituloPrincipalInterior{
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Alegreya', serif;
+    font-size: 80px;
+}
+
+#presentacionNosotros{
+    background-color:#cccccc57;
+    width: 40%;
+    margin-bottom: 50px;
+    position: relative;
+    left: 100px;
+}
+
+#presentacionInterno{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#participantes{
+    background-color:#cccccc57;
+    width: 40%;
+    margin-bottom: 50px;
+    position: relative;
+    left: 1000px;  
+    bottom:220px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+#tituloParticipante{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#tituloEquipo{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+
+#tituloEquipoInterior{
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    position: relative;
+    bottom:160px;
+}
+
+#personasParticipantes{
+    display: flex;
+    justify-content: center;
+}
+
+#persona{
+    margin: 50px;
+    background-color:#cccccc57;
+    padding: 20px;
+}
+
+#nombrePersona{
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#puestoPersona{
+    margin-bottom: 5px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#contactoPersona{
+    text-decoration: none; 
+    font-family: 'Chathura', sans-serif;
+}
+
+
+#fotoPersona{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: inline;
+}
+
+
+
+

@@ -1,0 +1,465 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-jun-2022, 13:05:13
+    Author     : digij
+*/
+
+/*Reseteo del css para que quede chulo*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Fondos y assets*/
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+body {
+    background-image: url(../assets/fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #CFCBCB;
+    background-size: 100%;
+    width: 100%;
+    height: 90px;
+}
+
+#interioNav {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+#botonDerecho {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    right: 200px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#Logo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Yeseva One';
+    font-weight: bold;
+    font-size: 50px;
+    top: 15px;
+}
+
+#botonIzquierdo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    left: 150px;
+    top: 10px;
+    font-size: 20px;
+}
+
+
+#frasePaginaPrincipal {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    top: 280px;
+}
+
+
+#usuarioPaginaPrincipal{
+    position: relative;
+    right:1000px;
+    top: 20px;
+
+}
+
+/*Panel*/
+
+#tituloMaestro{
+    text-align: center;
+    color: #fffefe;
+    font-size: 40px;
+    position: relative;
+    top: 75px;
+    font-family: 'Alegreya', serif;
+}
+
+/*css del menu de usuario*/
+#menuVertical{
+    background-color: #CFCBCB;
+    position: absolute; left: 0px; top: 0px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+}
+
+#menuVertical h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerrar_menu{
+    float: right;
+    margin: 12px;
+    width: 32px;
+    height: 32px;
+}
+
+#avatar{
+    width: 130px;
+    display: block;
+    margin: 50px 60px;
+}
+
+#menuVertical ul li{
+    list-style: none;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+#menuVertical ul li:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+#menuVertical ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+#cerraSesion{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif; 
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+}
+
+/*mensaje*/
+#mensajeError{
+    border: red 3px solid;
+    text-align: center;
+    background-color:#ff303057 ;
+    color: #000;
+    font-size: 20px;
+    z-index: 200;
+    width: 15%;
+    position: relative;
+    left: 1180px;
+    font-family: 'Chathura', sans-serif;
+    padding: 10px;
+}
+
+#mensajeExito{
+    border: greenyellow 3px solid;
+    text-align: center;
+    background-color:#74f13557 ;
+    color: #000;
+    font-size: 20px;
+    z-index: 200;
+    width: 15%;
+    position: relative;
+    left: 1180px;
+    font-family: 'Chathura', sans-serif;
+    padding: 10px;
+}
+
+/*Tabla*/
+#tablaListaControl{
+    width: 52.1%;
+    border: 1px solid #000;
+    position: relative;
+    top: 100px;
+    left: 450px;
+}
+
+
+#tablaListaControl th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+
+}
+
+#tablaListaControl th{
+    background-color: graytext;
+    text-align: center;
+
+}
+
+#tablaListaControl td{
+    background-color: #ccccff;
+
+}
+
+
+/*botones*/
+
+#botonListaUsuarios{
+    background-color: grey;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border: 2px #000 solid;
+    position: relative;
+    top: 150px;
+    left: 450px;
+}
+
+#botonListaUsuariosInterior{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif; 
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+    padding: 13px;
+}
+
+
+#botonListaProductos{
+    background-color: grey;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border: 2px #000 solid;
+    position: relative;
+    top: 100px;
+    left: 950px;
+
+}
+
+
+#botonListaProductosInterior{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif; 
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+    padding: 13px;
+}
+
+/*Formulario*/
+#tituloFormulario{
+    text-align: center;
+    color: #fffefe;
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    font-family: 'Alegreya', serif;
+}
+
+#formularioRegistro{
+    position: relative;
+    text-align: center;
+    width: 20%;
+    left: 750px;
+    top:80px;
+    background-color:rgba(32, 31, 31, 0.596);
+    padding-left: 10px;
+    padding-right: 10px;
+    color: azure;
+    border-radius: 4%;
+}
+
+#terminarRegistro{
+    position: relative;
+    left: 95px;
+}
+
+/*flecha*/
+#atras{
+    position: relative;
+    top: 110px;
+    left:680px;
+}

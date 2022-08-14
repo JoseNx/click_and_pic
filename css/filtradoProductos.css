@@ -1,0 +1,652 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-jul-2022, 16:12:46
+    Author     : digij
+*/
+
+/*Reseteo del css para que quede chulo*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Fondos y assets*/
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+body {
+    background-image: url(../assets/fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#menuHorizontal {
+    background-color: #CFCBCB;
+    background-size: 100%;
+    width: 100%;
+    height: 90px;
+}
+
+#interioNav {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+#botonDerecho {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    right: 200px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#Logo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Yeseva One';
+    font-weight: bold;
+    font-size: 50px;
+    top: 15px;
+}
+
+#botonIzquierdo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    left: 150px;
+    top: 10px;
+    font-size: 20px;
+}
+
+
+#frasePaginaPrincipal {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    top: 280px;
+}
+
+#titulo {
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Alegreya', serif;
+    font-size: 80px;
+    margin-bottom: 50px;
+
+}
+
+#subtitulo {
+    color: #fffefe;
+    text-align: center;
+    text-decoration:none;
+    font-family: 'Chathura', sans-serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+#botonRegistro{
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    background-color: #CFCBCB;
+    font-family: 'Chathura', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#usuarioPaginaPrincipal{
+    position: relative;
+    right:1250px;
+    top: 20px;
+
+}
+
+/*css del menu de usuario*/
+#menuVertical{
+    background-color: #CFCBCB;
+    position: absolute; left: 0px; top: 0px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+}
+
+#menuVertical h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerrar_menu{
+    float: right;
+    margin: 12px;
+    width: 32px;
+    height: 32px;
+}
+
+#avatar{
+    width: 130px;
+    display: block;
+    margin: 50px 60px;
+}
+
+#menuVertical ul li{
+    list-style: none;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+#menuVertical ul li:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+#menuVertical ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerraSesion{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif; 
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+}
+
+#tituloProductos{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*Botones de busqueda*/
+
+#botonLista{
+    position: absolute;
+    z-index: 4;
+    left: 1250px;
+
+}
+
+#botonListaInterior{
+    font-family: 'Chathura', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(236, 113, 47, 0.596);
+    padding: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#botonFiltroPublicacion{
+    position: absolute;
+    z-index: 3;
+    left: 500px;
+}
+
+#botonFiltroPublicacionInterior{
+    font-family: 'Chathura', sans-serif; 
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(236, 113, 47, 0.596);
+    padding: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#tituloCamaras{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+#tituloAccesorios{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*Feed productos*/
+
+#contenedorProductosCamara{
+    position: relative;
+    top: 100px;
+    width: 40%;
+    text-align: center;
+
+}
+
+#precioProducto{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Chathura', sans-serif;
+
+}
+
+#nombreProducto{
+    font-family: 'Chathura', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background:rgba(68, 68, 68, 0.548);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#publicacionDecoracion{
+    text-align: center;
+    background-color: rgba(236, 96, 21, 0.502);
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#fotoProducto{
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#botonProducto{
+    padding: 10px;
+    background-color: orange;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+/*Feed Accesorios*/
+
+#contenedorAccesorios{
+    position: absolute;
+    top: 275px;
+    left: 1100px;
+    width: 40%;
+    text-align: center;
+
+}
+
+#precioAccesorios{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Chathura', sans-serif;
+
+}
+
+#tablaAccesoriosControl{
+    text-align: center;
+    position: relative;
+    left: 180px;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    width: 50%;
+    text-align: center;
+
+}
+
+#nombreAccesorios{
+    font-family: 'Chathura', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background:rgba(68, 68, 68, 0.548);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+
+
+/*Carrito*/
+#carritoExterno{
+    position: absolute;
+    left: 1800px;
+    top: 17px;
+}
+
+/*Tabla*/
+#botonListaCamara{
+    position: absolute;
+    left: 400px;
+    top: 280px;
+}
+
+#botonListaCamaraInterior{
+    font-family: 'Chathura', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    background-color: rgba(44, 17, 3, 0.502);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;  
+}
+
+#botonListaAccesorio{
+    position: absolute;
+    left: 1250px;
+    top: 280px;
+}
+
+#botonListaAccesorioInterior{
+    font-family: 'Chathura', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    background-color: rgba(44, 17, 3, 0.502);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+
+#tablaListaControl{
+    position: absolute;
+    top:440px;
+    left: 500px;
+    width: 50%;
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#tablaListaControl th, td {
+    text-align: center;
+    vertical-align: central;
+    padding: 0.3em;
+    width: 25%;
+    align: center;
+
+}
+
+#tablaListaControl th{
+    background-color: graytext;
+    text-align: center;
+    color: white;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    padding: 20px;
+
+}
+
+#tablaListaControl td{
+    background-color: rgba(44, 17, 3, 0.502);
+    color: white; 
+    border-bottom:1px solid #000000
+}
+
+/*Formulario filtro*/
+
+#formularioFitrarProveedor{
+    position: absolute;
+    left: 860px;
+    top: 200px;
+    background-color: rgba(44, 17, 3, 0.502);
+    height: 200px;
+    width: 200px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    text-align: center;
+}
+
+
+#tituloFiltrado{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Chathura', sans-serif;
+    position: relative;
+    top:20px
+}
+
+#selector{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Chathura', sans-serif;
+    position: relative;
+    top:60px;
+    left: 55px;
+    background-color: rgba(236, 113, 47, 0.596);
+
+}
+
+#botonFiltrar {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Chathura', sans-serif;
+    position: relative;
+    top:130px;
+    right: 45px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(236, 113, 47, 0.596);
+}

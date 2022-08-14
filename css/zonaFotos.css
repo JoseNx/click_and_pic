@@ -1,0 +1,415 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-jun-2022, 15:52:33
+    Author     : digij
+*/
+
+/*Reseteo del css para que quede chulo*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Fondos y assets*/
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+
+body {
+    background-image: url(../assets/fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#menuHorizontal {
+    background-color: #CFCBCB;
+    background-size: 100%;
+    width: 100%;
+    height: 90px;
+}
+
+#interioNav {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+#botonDerecho {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    right: 200px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#Logo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Yeseva One';
+    font-weight: bold;
+    font-size: 50px;
+    top: 15px;
+}
+
+#botonIzquierdo {
+    color: #000;
+    text-align: center;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Chathura', sans-serif;
+    left: 150px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#usuarioPaginaPrincipal{
+    position: relative;
+    right:1250px;
+    top: 20px;
+
+}
+
+/*css del menu de usuario*/
+#menuVertical{
+    background-color: #CFCBCB;
+    position: absolute; left: 0px; top: 0px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+}
+
+#menuVertical h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerrar_menu{
+    float: right;
+    margin: 12px;
+    width: 32px;
+    height: 32px;
+}
+
+#avatar{
+    width: 130px;
+    display: block;
+    margin: 50px 60px;
+}
+
+#menuVertical ul li{
+    list-style: none;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+#menuVertical ul li:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+#menuVertical ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#cerraSesion{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif; 
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+}
+
+/*Botones de Accion*/
+#contenedorBotones{
+    background-color:  black;
+    width: 200px;
+    height: 220px;
+    position: relative;
+    left: 1720px;
+    text-align: center;
+    border-bottom-left-radius:10px;
+    background-color: #dc7f36;
+}
+
+#tituloGestion{
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Chathura', sans-serif;
+}
+
+#botonSubir{
+    position: relative;
+    top: 120px;
+
+}
+
+#botonSubirInterior{
+    font-family: 'Chathura', sans-serif;
+    font-size: 17px;
+}
+
+#botonBorrarPublicacion{
+    position: relative;
+    top: 20px;
+}
+
+#botonBorrarPublicacionInterior{
+   font-family: 'Chathura', sans-serif; 
+   font-size: 17px;
+}
+
+/*Feed publicaciones*/
+
+#contenedorPublicaciones{
+   position: relative;
+   bottom: 160px;
+   text-align: center;
+    
+}
+
+#tituloPublicaciones{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+
+#tablaListaControl{
+    text-align: center;
+    position: relative;
+    left: 900px;
+}
+
+/*Feed publicaciones*/
+
+#contenedorPublicaciones{
+    position: relative;
+    top: 100px;
+    text-align: center;
+
+}
+
+#tituloPublicaciones{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+}
+
+#tablaListaControl{
+    text-align: center;
+    position: relative;
+    left: 600px;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+
+}
+
+#tituloFoto{
+    text-align: center;
+    font-size: 60px;
+    padding: 30px;
+    background:rgba(68, 68, 68, 0.548);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#publicacionDecoracion{
+    text-align: center;
+    background-color: rgba(129, 129, 129, 0.548);
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#fotoPublicacion{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+}

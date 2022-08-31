@@ -71,7 +71,6 @@ $listaPublicacion = $resultadoPublicacion->fetchAll(PDO::FETCH_ASSOC);
                     <li><a href="../php/panelGeneralUsuario.php">Panel general</a></li>
                     <li><a href="../php/tusPedidos.php">Tus pedidos</a></li>
                     <li><a href="../php/tusFotos.php">Tus fotos </a></li>
-                    <li><a href="../php/opcionesSoloUsuario.php">Opciones de usuario </a></li>
                     <li><form method="post"><input id="cerraSesion" type="submit" name="cerrarSesion" value="Cerrar Sesión"></form></li>
                 <?php } ?>
             </ul>

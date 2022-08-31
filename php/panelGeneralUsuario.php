@@ -27,11 +27,6 @@ if (!isset($_SESSION['login'])) {
     header("Location: ../php/login.php");
 }
 
-if (isset($_SESSION['login'])) {
-    if ($_SESSION['login'] != $cuentaNormal)
-        header("Location: ../php/login.php");
-}
-
 if (!isset($_SESSION['rol'])) {
     $_SESSION['rol'] = "";
 }

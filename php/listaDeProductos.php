@@ -153,7 +153,7 @@ if (isset($listaCamara)) {
                         <td><?php echo $CamaraDato['precio'] . " €" ?></td>
                         <td><img id="fotoProducto" width="100px" src="data:<?php echo $CamaraDato['tipo']; ?>;base64,<?php echo base64_encode($CamaraDato['foto_producto']); ?>"></td> 
                         <td>                            
-                            <form>
+                            <form method="post">
                                 <input name="añadirCarrito[]" type="hidden"  value="<?php echo $CamaraDato['nombre_corto'] ?>">
                                 <input id="botonProducto" name="botonAñadir" type="submit" value="Añadir al carrito">
                             </form>
@@ -189,7 +189,7 @@ if (isset($listaAccesorios)) {
                 <td><?php echo $AccesorioDato['precio'] . " €" ?></td>
                 <td><img id="fotoProducto" width="100px" src="data:<?php echo $AccesorioDato['tipo']; ?>;base64,<?php echo base64_encode($AccesorioDato['foto_producto']); ?>"></td> 
                 <td>                            
-                    <form>
+                    <form method="post">
                         <input name="añadirCarrito[]" type="hidden"  value="<?php echo $AccesorioDato['nombre_corto'] ?>">
                         <input id="botonProducto" name="botonAñadir" type="submit" value="Añadir al carrito">
                     </form>

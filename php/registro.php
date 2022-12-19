@@ -52,11 +52,11 @@ if (isset($registro)) {
         <!--La barra de navegacion principal, la cual esta hecha usando boostrap-->
         <nav>
             <div id="interioNav">
-                <a id="botonDerecho" href="">NUESTROS PRODUCTOS</a>
+                <a id="botonDerecho" href="../php/zonaProductos.php">NUESTROS PRODUCTOS</a>
 
                 <a id="Logo" href="../html/pagina_principal.html">Click And Pic</a>
 
-                <a id="botonIzquierdo" href="">VUESTRAS FOTOS</a>
+                <a id="botonIzquierdo" href="../php/zonaFotos.php">VUESTRAS FOTOS</a>
 
                 <img id="usuarioPaginaPrincipal" src="../assets/cara_login.png">
             </div>

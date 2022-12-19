@@ -158,7 +158,7 @@ if (isset($filtrar)) {
                         <td><?php echo $CamaraProveedorDato['precio'] . " €" ?></td>
                         <td><img id="fotoProducto" width="100px" src="data:<?php echo $CamaraProveedorDato['tipo']; ?>;base64,<?php echo base64_encode($CamaraProveedorDato['foto_producto']); ?>"></td> 
                         <td>                            
-                            <form>
+                            <form method="post">
                                 <input name="añadirCarrito[]" type="hidden"  value="<?php echo $CamaraProveedorDato['nombre_corto'] ?>">
                                 <input id="botonProducto" name="botonAñadir" type="submit" value="Añadir al carrito">
                             </form>

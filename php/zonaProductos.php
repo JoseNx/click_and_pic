@@ -158,7 +158,7 @@ if (isset($cerrarSesion)) {
                                 <p id="nombreAccesorios"><?php echo $productoAccesorioDato['nombre_prod'] ?></p>
                                 <img id="fotoProducto" width="100px" src="data:<?php echo $productoAccesorioDato['tipo']; ?>;base64,<?php echo base64_encode($productoAccesorioDato['foto_producto']); ?>">
                                 <p id="precioAccesorios"><?php echo $productoAccesorioDato['precio'] . ' €' ?></p>
-                                <form>
+                                <form method="post">
                                     <input name="añadirCarrito[]" type="hidden"  value="<?php echo $productoAccesorioDato['nombre_corto'] ?>">
                                     <input id="botonProducto" name="botonAñadir" type="submit" value="Añadir al carrito">
                                 </form>
